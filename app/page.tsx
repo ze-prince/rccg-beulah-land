@@ -7,70 +7,79 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[40vh] md:min-h-[70vh] lg:min-h-[100vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/church1.jpg')" }}
-        />
-        
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/75" />
+      {/* Optimized Hero Section */}
+<section className="relative min-h-[40vh] md:min-h-[70vh] lg:min-h-[100vh] flex items-center justify-center overflow-hidden">
+  
+  {/* Background Image - Optimized */}
+  <Image
+    src="/church1.jpg"
+    alt="RCCG Beulah Land Church"
+    fill
+    className="object-cover"
+    priority
+    quality={85}
+    sizes="100vw"
+  />
 
-        {/* Decorative Elements */}
-        <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-red-500/20 blur-3xl" />
-        <div className="absolute bottom-20 right-20 h-96 w-96 rounded-full bg-red-700/20 blur-3xl" />
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/75" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center"><br />
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="uppercase tracking-[0.3em] text-red-200 mb-6"
-          >
-            Redeemed Christian Church of God
-          </motion.p>
+  {/* Decorative Blur Circles */}
+  <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-red-500/20 blur-3xl" />
+  <div className="absolute bottom-20 right-20 h-96 w-96 rounded-full bg-red-700/20 blur-3xl" />
 
-          <motion.h1 
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2 }}
-            className="text-5xl md:text-8xl font-bold leading-tight mb-8 text-white"
-          >
-            Welcome To<br />
-            <span className="block text-red-300">Beulah Land Parish</span>
-          </motion.h1>
+  <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+    <motion.p 
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="uppercase tracking-[0.3em] text-red-200 mb-6"
+    >
+      Redeemed Christian Church of God
+    </motion.p>
 
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto mb-10"
-          >
-            Raising a people deeply rooted in Christ, empowered by the Holy Spirit, 
-            and equipped to transform lives.
-          </motion.p>
+    <motion.h1 
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, delay: 0.2 }}
+      className="text-5xl md:text-8xl font-bold leading-tight mb-8 text-white"
+    >
+      Welcome To<br />
+      <span className="block text-red-300">Beulah Land Parish</span>
+    </motion.h1>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row justify-center gap-5"
-          >
-            <Link
-              href="/sermons"
-              className="bg-red-700 hover:bg-red-800 px-8 py-4 rounded-full text-lg font-semibold transition"
-            >
-              Watch Sermons
-            </Link>
+    <motion.p 
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+      className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto mb-10"
+    >
+      Raising a people deeply rooted in Christ, empowered by the Holy Spirit, 
+      and equipped to transform lives.
+    </motion.p>
 
-            <Link
-              href="/contact"
-              className="backdrop-blur-md bg-gray-500 border border-white/30 hover:bg-white hover:text-red-900 px-8 py-4 rounded-full text-lg font-semibold transition"
-            >
-              Plan Your Visit
-            </Link>
-          </motion.div> <br />
-        </div>
-      </section>
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.6 }}
+      className="flex flex-col sm:flex-row justify-center gap-5"
+    >
+      <Link
+        href="/sermons"
+        className="bg-red-700 hover:bg-red-800 px-8 py-4 rounded-full text-lg font-semibold transition"
+      >
+        Watch Sermons
+      </Link>
+
+      <Link
+        href="/contact"
+        className="backdrop-blur-md bg-gray-500 border border-white/30 hover:bg-white hover:text-red-900 px-8 py-4 rounded-full text-lg font-semibold transition"
+      >
+        Plan Your Visit
+      </Link>
+    </motion.div>
+  </div>
+</section>
 
       {/* WELCOME SECTION */}
       <section className="py-24 bg-white">
