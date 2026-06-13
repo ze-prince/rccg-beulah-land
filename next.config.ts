@@ -1,11 +1,12 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',           // This is the important line
   images: {
-    unoptimized: true,        // Required for static export
+    unoptimized: false,        // Allow Next.js to optimize images (better performance)
+    domains: ['www.google.com'], // For Google Maps embed
   },
-  trailingSlash: true,        // Helps with routing on Netlify
+  compress: true,              // Enable compression
+  trailingSlash: true,         // Helps with routing
 };
 
 export default nextConfig;
