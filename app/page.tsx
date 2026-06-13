@@ -34,7 +34,7 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       className="uppercase tracking-[0.3em] text-red-200 mb-6"
-    >
+    ><br />
       Redeemed Christian Church of God
     </motion.p>
 
@@ -78,6 +78,7 @@ export default function Home() {
         Plan Your Visit
       </Link>
     </motion.div>
+    <br />
   </div>
 </section>
 
