@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -43,7 +44,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story + Image */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -66,13 +67,25 @@ export default function AboutUs() {
               </div>
             </motion.div>
 
+            {/* Added church4.jpg with nice styling */}
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-gray-100 h-96 rounded-3xl"
-            />
+              className="relative rounded-3xl overflow-hidden shadow-2xl h-96"
+            >
+              <Image
+                src="/church4.jpg"
+                alt="RCCG Beulah Land Church"
+                fill
+                className="object-cover"
+                quality={85}
+                loading="lazy"
+              />
+              {/* Nice overlay for better aesthetics */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </motion.div>
           </div>
         </div>
       </section>
@@ -119,79 +132,6 @@ export default function AboutUs() {
                     {belief}
                   </p>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Vision & Mission */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Vision */}
-            <motion.div 
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-red-50 p-10 rounded-3xl"
-            >
-              <h3 className="text-4xl font-bold mb-8 text-red-900">Our Vision</h3>
-              <ul className="space-y-5 text-lg text-gray-700">
-                <li><b>✓</b> To make Heaven.</li>
-                <li><b>✓</b> To take as many people with us.</li>
-                <li><b>✓</b> To have a member of RCCG in every family of all nations.</li>
-              </ul>
-            </motion.div>
-
-            {/* Mission */}
-            <motion.div 
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-red-50 text-white p-10 rounded-3xl"
-            >
-              <h3 className="text-4xl font-bold mb-8 text-red-900">Our Mission</h3>
-              <ul className="space-y-5 text-lg text-gray-700">
-                <li><b>✓</b> Holiness will be the lifestyle of members to ensure they make Heaven.</li>
-                <li><b>✓</b> Church Planting: Churches will be established within a 5-minute walking distance in developing countries, and a 15-minute driving distance in developed countries.</li>
-                <li><b>✓</b> The church will pursue these goals until every nation in the world is reached for the Lord Jesus Christ.</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Values */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-5xl font-bold text-center text-red-900 mb-16"
-          >
-            Our Core Values
-          </motion.h2>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { title: "Worship", desc: "Loving God wholeheartedly." },
-              { title: "Prayer", desc: "Depending on God daily." },
-              { title: "Excellence", desc: "Honoring God with our best." },
-              { title: "Evangelism", desc: "Reaching the lost for Christ." },
-            ].map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center p-8 rounded-3xl hover:bg-red-50 transition-colors"
-              >
-                <h3 className="font-bold text-2xl mb-4 text-red-900">{value.title}</h3>
-                <p className="text-gray-600">{value.desc}</p>
               </motion.div>
             ))}
           </div>

@@ -68,7 +68,7 @@ export default function Programmes() {
               <div className="w-14 h-14 flex items-center justify-center mb-6 bg-red-100 rounded-xl group-hover:bg-red-700 group-hover:text-white transition-colors">
                 <Calendar className="w-8 h-8 text-red-700 group-hover:text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2">Sunday Celebration Service</h3>
+              <h3 className="text-2xl font-semibold mb-2">Sunday Service</h3>
               <p className="text-red-700 font-medium mb-4">Every Sunday • 8:00 AM</p>
               <p className="text-gray-600">
                 Our main worship service filled with anointed worship, powerful teaching, 
@@ -142,7 +142,7 @@ export default function Programmes() {
               <p className="text-gray-600 mb-6">
                 A powerful monthly encounter with God in deep worship, prayer, and the move of the Holy Spirit.
               </p>
-              <p className="text-sm text-red-700 font-medium">Last Friday of every month • 6:00 PM</p>
+              <p className="text-sm text-red-700 font-medium">Last Friday of every month at Redemption Camp • 6:00 PM</p>
             </motion.div>
 
             <motion.div 
@@ -159,7 +159,6 @@ export default function Programmes() {
               <p className="text-gray-600 mb-6">
                 Seasons of intense prayer and fasting for spiritual breakthroughs and personal growth.
               </p>
-              <p className="text-sm text-red-700 font-medium">Every Tuesday & Thursday</p>
             </motion.div>
           </div>
         </div>

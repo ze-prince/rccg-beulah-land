@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white text-sm">
-              A People Married To Christ.
+              Bride of Christ.
             </p>
           </div>
 
@@ -69,11 +69,11 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <Phone size={18} />
-                <p>+234 XXX XXX XXXX</p>
+                <p>+234 802 649 2055</p>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={18} />
-                <p>FM96+79W, Eti-Osa, Lagos 106104, Lagos</p>
+                <p>Majek 2nd Gate Bus Stop, Abijo, Ibeju Lekki, Lagos.</p>
               </div>
             </div>
 

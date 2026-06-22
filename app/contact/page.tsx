@@ -47,23 +47,23 @@ export default function Contact() {
               <h3 className="font-medium text-lg mb-2">Address</h3>
               <p className="text-gray-700">
                 RCCG Beulah Land Parish<br />
-                [Your Full Physical Address]<br />
-                City, State, Nigeria
+                Majek 2nd Gate Bus Stop, Abijo, Ibeju Lekki,<br />
+                Lagos State, Nigeria.
               </p>
             </div>
 
             <div>
               <h3 className="font-medium text-lg mb-2">Phone Numbers</h3>
               <p className="text-gray-700">
-                Main Line: +234 XXX XXX XXXX<br />
-                WhatsApp: +234 XXX XXX XXXX
+                Main Line: +234 802 649 2055<br />
+                WhatsApp: +234 802 649 2055
               </p>
             </div>
 
             <div>
               <h3 className="font-medium text-lg mb-2">Service Times</h3>
               <p className="text-gray-700">
-                Sunday Service: 8:00 AM - 10:30 AM<br />
+                Sunday Service: 10:00 AM - 12:00 AM<br />
                 Mid-week Service: Wednesday 6:00 PM
               </p>
             </div>

@@ -34,7 +34,7 @@ export default function Sermons() {
       <section className="py-16 bg-red-50">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-semibold text-red-900 mb-3">Watch Live</h2>
-          <p className="text-gray-600 mb-8">Every Sunday at 8:00 AM</p>
+          <p className="text-gray-600 mb-8">Every Sunday at 10:00 AM</p>
 
           <a 
             href="https://www.youtube.com/@beulahlandparish/live" 
@@ -46,7 +46,7 @@ export default function Sermons() {
                 <Play className="w-10 h-10 text-white ml-1" />
               </div>
               <p className="text-white text-xl">Live Service</p>
-              <p className="text-red-400 mt-2">Sunday 8:00 AM - 10:30 AM</p>
+              <p className="text-red-400 mt-2">Sunday 10:00 AM - 12:00 AM</p>
             </div>
           </div>
 
