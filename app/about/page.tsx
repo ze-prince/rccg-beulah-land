@@ -51,7 +51,7 @@ export default function AboutUs() {
             <motion.div
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl font-semibold text-red-900 mb-8">Our Story</h2>
@@ -67,11 +67,10 @@ export default function AboutUs() {
               </div>
             </motion.div>
 
-            {/* Added church4.jpg with nice styling */}
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8 }}
               className="relative rounded-3xl overflow-hidden shadow-2xl h-96"
             >
@@ -83,7 +82,52 @@ export default function AboutUs() {
                 quality={85}
                 loading="lazy"
               />
-              {/* Nice overlay for better aesthetics */}
+              
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Teenage Church Section - NEW */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl font-semibold text-red-900 mb-8">Teenage Church</h2>
+              <div className="space-y-6 text-gray-700 leading-relaxed text-[17px]">
+                <p>
+                  Our Teenage Church is a vibrant and dynamic ministry designed to meet the spiritual 
+                  and social needs of teenagers. We provide a safe, exciting, and spiritually enriching 
+                  environment where young people can grow in faith, build godly friendships, and discover their purpose in Christ.
+                </p>
+                <p>
+                  Through powerful teachings, worship, mentorship, and fun activities, we are raising a generation 
+                  of young believers who are unashamed of the Gospel and ready to impact their world.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8 }}
+              className="relative rounded-3xl overflow-hidden shadow-2xl h-96"
+            >
+              <Image
+                src="/teens.jpg"           // ← Change to your actual teens picture name
+                alt="Teenage Church"
+                fill
+                className="object-cover"
+                quality={85}
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </motion.div>
           </div>
@@ -96,7 +140,7 @@ export default function AboutUs() {
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-semibold text-red-900 mb-3">What We Believe</h2>
@@ -120,7 +164,7 @@ export default function AboutUs() {
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ delay: index * 0.05 }}
                 className="bg-white p-8 rounded-3xl border border-red-100 hover:border-red-300 transition-all group"
               >

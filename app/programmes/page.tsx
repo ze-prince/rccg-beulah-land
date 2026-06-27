@@ -49,7 +49,7 @@ export default function Programmes() {
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-4xl font-semibold text-center mb-16 text-red-900"
           >
             Regular Programmes
@@ -61,7 +61,7 @@ export default function Programmes() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: 0.1 }}
               className="bg-white border border-red-100 rounded-2xl p-8 hover:shadow-xl transition-all group"
             >
@@ -80,7 +80,7 @@ export default function Programmes() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: 0.2 }}
               className="bg-white border border-red-100 rounded-2xl p-8 hover:shadow-xl transition-all group"
             >
@@ -98,7 +98,7 @@ export default function Programmes() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: 0.3 }}
               className="bg-white border border-red-100 rounded-2xl p-8 hover:shadow-xl transition-all group"
             >
@@ -121,7 +121,7 @@ export default function Programmes() {
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-4xl font-semibold text-center mb-12 text-red-900"
           >
             Special Programmes
@@ -131,7 +131,7 @@ export default function Programmes() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: 0.1 }}
               className="bg-white rounded-3xl p-10 hover:shadow-lg transition-all"
             >
@@ -148,7 +148,7 @@ export default function Programmes() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: 0.2 }}
               className="bg-white rounded-3xl p-10 hover:shadow-lg transition-all"
             >

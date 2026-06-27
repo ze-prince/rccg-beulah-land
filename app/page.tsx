@@ -32,7 +32,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="uppercase tracking-[0.3em] text-red-200 mb-6"
-          >
+          ><br />
           Redeemed Christian Church of God
           </motion.p>
 
@@ -74,6 +74,7 @@ export default function Home() {
             >
               Plan Your Visit 
             </Link>
+            <br />
             
           </motion.div>
         </div>
@@ -85,7 +86,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
           >
             <div>
@@ -107,7 +108,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
             className="rounded-3xl overflow-hidden shadow-2xl"
           >
@@ -130,7 +131,7 @@ export default function Home() {
     <motion.h2 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       className="text-4xl font-semibold text-center mb-12 text-red-900"
     >
       Our Pastors
@@ -142,7 +143,7 @@ export default function Home() {
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ delay: 0.1 }}
         className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300"
       >
@@ -169,7 +170,7 @@ export default function Home() {
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ delay: 0.2 }}
         className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300"
       >
@@ -200,7 +201,7 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="max-w-2xl mx-auto px-6"
         >
           <h2 className="text-4xl font-semibold mb-4">Come Experience God With Us</h2>

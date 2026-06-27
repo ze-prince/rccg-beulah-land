@@ -13,6 +13,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/programmes", label: "Programmes" },
+    { href: "/offering", label: "Offerings" },
     { href: "/sermons", label: "Sermons & Live" },
     { href: "/contact", label: "Contact Us" },
   ];
